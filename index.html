@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Tambahkan meta tag ini untuk mengizinkan embed di Google Sites -->
+    <meta http-equiv="X-Frame-Options" content="allow-from https://sites.google.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .comment-box {
+        width: 50%;
+        border: 1px solid #e1e1e1;
+        margin: 50px auto;
+        padding: 30px;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 8px;
+        margin-top: 80px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        background-color: white;
+      }
+
+      .comment-box p {
+        text-align: left;
+        font-size: 24px;
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 25px;
+      }
+      
+      .comment-form input, .comment-form textarea {
+        width: 100%;
+        padding: 12px 15px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        outline: none;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        border: 1px solid #ddd;
+        color: #555;
+        border-radius: 4px;
+        transition: border 0.3s ease;
+      }
+      
+      .comment-form input:focus, .comment-form textarea:focus {
+        border-color: #777;
+      }
+      
+      .comment-form textarea {
+        min-height: 150px;
+        resize: vertical;
+      }
+      
+      .comment-form button {
+        margin: 10px 0;
+        border: none;
+        background-color: #d0d0d0;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 3px;
+        color: #444;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+      }
+      
+      .comment-form button:hover {
+        background-color: #c0c0c0;
+      }
+      
+      @media (max-width: 768px) {
+        .comment-box {
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="comment-box">
+      <p>Tinggalkan Komentar</p>
+      <form class="comment-form">
+        <input type="text" placeholder="Nama Anda" required>
+        <textarea placeholder="Komentar Anda..." required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+    </div>
+  </body>
+</html>
